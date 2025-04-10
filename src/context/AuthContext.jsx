@@ -25,7 +25,6 @@ export const AuthProvider = ({ children }) => {
         setLoading(false);
         return;
       }
-
       try {
         setLoading(true);
         const res = await axios.get('api/auth/me');
